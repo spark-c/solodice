@@ -1,0 +1,58 @@
+# E Dice
+
+dice
+- 20
+- 12
+- 10 x2
+- 8 
+- 6
+- 4
+
+object is to get highest possible roll for each of the dice
+
+1. roll all dice until you get a successful roll
+2. take die out and roll the rest
+3. each die that is successful/removed can be spent to give a +1 to a die in play. add the spent die back to the rolling pool
+4. if you can't remove a die on any given round, game over
+
+attempt to put together a points / pvp system where you need to get more points than your opponent. best to finish will all dice, but you should get some amount even if you don't finish
+
+when in multiplayer, should it be real time with an incentive for first to finish, or should time not matter?
+
+---
+
+## mkting
+
+- make custom dice sets for the game
+- custom rolling trays that look like books with felt inside
+- themed packages of dice/box
+
+# E Dice
+
+dice
+- 20
+- 12
+- 10 x2
+- 8 
+- 6
+- 4
+
+object is to get highest possible roll for each of the dice
+
+1. roll all dice until you get a successful roll
+2. take die out and roll the rest
+3. each die that is successful/removed can be spent to give a +1 to a die in play. add the spent die back to the rolling pool
+4. if you can't remove a die on any given round, game over
+
+attempt to put together a points / pvp system where you need to get more points than your opponent. best to finish will all dice, but you should get some amount even if you don't finish
+
+when in multiplayer, should it be real time with an incentive for first to finish, or should time not matter?
+
+---
+
+## mkting
+
+- make custom dice sets for the game
+- custom rolling trays that look like books with felt inside
+- themed packages of dice/box
+
