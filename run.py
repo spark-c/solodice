@@ -2,11 +2,12 @@ import random
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from functools import total_ordering
-from typing import List
+from typing import Dict, List
 
 
 class Tray:
     def __init__(self, name: str, dice:List["Die"]) -> None:
+        self.name: str = name
         self.dice: List["Die"] = dice
 
     def print(self) -> None:
@@ -22,23 +23,26 @@ class Tray:
         self.dice.sort(reverse=True)
 
     def __len__(self) -> int:
-        return self.dice.len()
+        return len(self.dice)
+
+    def roll(self) -> Dict[str, int]:
+        rolls: Dict[str, int] = {}
+        for die in self.dice:
+            rolls[str(die.value)] = die.roll()
+        return rolls
 
 
 @dataclass
 @total_ordering
 class Die():
     def __init__(self, value: int) -> None:
-        self.value = value
+        self.value: int = value
 
     def roll(self) -> int:
         return random.randint(1, self.value)
 
     def move(self) -> None:
         pass
-
-    def value(self) -> int:
-        return self.value
 
     def __eq__(self, die2) -> bool:
         return self.value == die2.value
@@ -56,6 +60,4 @@ d4: Die = Die(4)
 
 tray: Tray = Tray("Play", [d8, d10, d12, d20, d6, d4])
 holding: Tray = Tray("Holding", [])
-tray.print()
-tray.sort()
-tray.print()
+print(tray.roll())
