@@ -38,6 +38,10 @@ class Die():
     def __init__(self, value: int) -> None:
         self.value: int = value
 
+    @property
+    def trade_value(self) -> int:
+        return (self.value % 10) + 1
+
     def roll(self) -> int:
         return random.randint(1, self.value)
 
@@ -54,6 +58,7 @@ class Die():
 d20: Die = Die(20)
 d12: Die = Die(12)
 d10: Die = Die(10)
+d10_2: Die = Die(10)
 d8: Die = Die(8)
 d6: Die = Die(6)
 d4: Die = Die(4)
